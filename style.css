@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Cinzel+Decorative:wght@400;700;900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kameron:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #000000; */
+  color: white;
+}
+
+body{
+     background-image:
+        linear-gradient(rgba(50, 50, 50, 0.6), rgba(50, 50, 50, 0.6)),
+        url("./background.jpg");
+    background-size: 100% 100vh;
+}
+
+nav {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  font-family: "Kameron", serif;
+  /* background-color: #000000; */
+}
+
+nav img {
+  height: 70px;
+  width: 70px;
+}
+
+main {
+  height: 92vh;
+  width: 100%;
+  /* background-color: #000000; */
+}
+
+main .top_main {
+  height: 30vh;
+  width: 100%;
+  /* background-color: lightblue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+main .top_main h5 {
+  font-size: 16px;
+  font-family: "Arya", sans-serif;
+}
+main .top_main h3 {
+  font-size: 2.5em;
+  font-style: italic;
+   text-shadow: 2px 8px 8px #00000080;
+}
+
+main .images {
+  height: 62vh;
+  width: 100%;
+  /* background-color: green; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: end;
+}
+
+main .images .char {
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  /* background-color: #fff; */
+  
+}
+
+main .images .char img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all .2s linear;
+     filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5))
+    
+}
+
+.images .char img:hover{
+    transform: scale(1.1);
+}
