@@ -1,8 +1,10 @@
-main .images {
+@media (max-width: 1024px) {
+  main .images {
     height: 200vh;
     width: 100%;
     /* background-color: green; */
     display: grid;
-    grid-template-columns:  repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: end;
+  }
 }

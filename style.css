@@ -8,11 +8,13 @@
   color: white;
 }
 
-body{
-     background-image:
+body {
+  /* background-image:
         linear-gradient(rgba(50, 50, 50, 0.6), rgba(50, 50, 50, 0.6)),
         url("./background.jpg");
-    background-size: 100% 100vh;
+    background-size: 100% 100vh; */
+  background-image: linear-gradient(to top left, rgb(112, 111, 111), black);
+  /* background-color: #333333; */
 }
 
 nav {
@@ -31,13 +33,13 @@ nav img {
 }
 
 main {
-  height: 92vh;
+  height: 920vh;
   width: 100%;
   /* background-color: #000000; */
 }
 
 main .top_main {
-  height: 30vh;
+  height: 20vh;
   width: 100%;
   /* background-color: lightblue; */
   display: flex;
@@ -46,14 +48,93 @@ main .top_main {
   justify-content: start;
 }
 
-main .top_main h5 {
-  font-size: 16px;
+main .cover {
+  height: 72vh;
+  width: 95%;
+  background-image: url(./cover.jfif);
+  filter: saturate(130%);
+  background-size: 100% 72vh;
+  margin: 0 0 0 2.5%;
+  border-radius: 20px;
+}
+
+main .question_set1 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.question_set1 .question_set1_top {
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.question_set1 h3 {
+  font-size: 2em;
+  margin: 20px 0 20px 0;
+  font-family: sans-serif;
+}
+
+.question_set1 h3:before {
+  content: "";
+  position: relative;
+  right: 10px;
+  width: 3px;
+  height: 40px;
+  border-left: 4px solid;
+}
+
+.question_set1 p {
+  font-size: 14px;
+  word-spacing: 2px;
+}
+
+.question_set1_top .left:first-child {
+  height: 50vh;
+  width: 45vw;
+}
+.question_set1_top .right:last-child {
+  height: 100%;
+  width: 45vw;
+  background-image: url(./left_aka.jfif);
+  filter: saturate(130%);
+  background-size: 45vw 100%;
+  border-radius: 40px;
+}
+
+main .question_set1 .question_set1_bottom {
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.question_set1_bottom .left:first-child {
+  height: 100%;
+  width: 45vw;
+  background-image: url(./Yahiko.jfif);
+  filter: saturate(130%);
+  background-size: 45vw 100%;
+  border-radius: 40px;
+}
+.question_set1_bottom .right:last-child {
+  height: 50vh;
+  width: 45vw;
+}
+main .top_main p {
+  font-size: 14px;
   font-family: "Arya", sans-serif;
+  margin: 0 0 -10px 0;
 }
 main .top_main h3 {
   font-size: 2.5em;
   font-style: italic;
-   text-shadow: 2px 8px 8px #00000080;
+  text-shadow: 2px 8px 8px #00000080;
+  margin: 0 0 20px 0;
 }
 
 main .images {
@@ -71,23 +152,22 @@ main .images .char {
   overflow: hidden;
   text-align: center;
   /* background-color: #fff; */
-  
 }
 
-main .images .char p{
+main .images .char p {
   font-size: 20px;
 }
 
+main .images .char img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+  filter: saturate(130%);
 
-main .images .char img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: all .2s linear;
-     filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5))
-    
+  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
 }
 
-.images .char img:hover{
-    transform: scale(1.1);
+.images .char img:hover {
+  transform: scale(1.1);
 }
