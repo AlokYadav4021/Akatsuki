@@ -74,6 +74,11 @@ main .images .char {
   
 }
 
+main .images .char p{
+  font-size: 20px;
+}
+
+
 main .images .char img{
     height: 100%;
     width: 100%;

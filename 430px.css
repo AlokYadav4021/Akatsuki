@@ -1,0 +1,31 @@
+nav img {
+    height: 50px;
+    width: 50px;
+}
+
+nav h1 {
+    font-size: 22px;
+}
+
+main .top_main h5 {
+    font-size: 11px;
+}
+
+main {
+    height: 350vh;
+}
+
+main .top_main{
+    justify-content: center;
+}
+main .top_main h3 {
+    font-size: 1.5em;
+}
+main .images {
+    height: 300vh;
+    width: 100%;
+    /* background-color: green; */
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    align-items: end;
+}
