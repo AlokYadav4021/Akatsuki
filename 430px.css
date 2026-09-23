@@ -1,4 +1,4 @@
-@media (max-width: 430px) {
+@media (max-width: 450px) {
   nav img {
     height: 50px;
     width: 50px;
@@ -33,11 +33,11 @@
   }
 
   main .question_set1 {
-    height: 200vh;
+    height: 140vh;
   }
 
   .question_set1 .question_set1_top {
-    height: 100vh;
+    height: 75vh;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -55,13 +55,13 @@
   }
 
   main .question_set1 .question_set1_bottom {
-    height: 80vh;
+    height: 50vh;
     flex-direction: column;
     align-items: center;
   }
 
   .question_set1_bottom .left:first-child {
-    height: 50%;
+    height: 50vh;
     width: 90%;
     background-size: 100% 100%;
     order: 2;
