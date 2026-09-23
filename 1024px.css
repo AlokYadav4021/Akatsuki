@@ -1,4 +1,13 @@
 @media (max-width: 1024px) {
+  .question_set1 .question_set1_top {
+    height: 40vh;
+  }
+
+  main .question_set1 .question_set1_bottom {
+    height: 40vh;
+  }
+
+  
   main .images {
     height: 200vh;
     width: 100%;
