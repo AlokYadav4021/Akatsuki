@@ -49,12 +49,12 @@ main .top_main {
 }
 
 main .cover {
-  height: 72vh;
-  width: 95%;
-  background-image: url(./cover.jfif);
+  height: 100vh;
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./cover.jfif");
   filter: saturate(130%);
-  background-size: 100% 72vh;
-  margin: 0 0 0 2.5%;
+  background-size: 100% 100vh;
   border-radius: 20px;
 }
 
@@ -126,7 +126,40 @@ main .question_set1 .question_set1_bottom {
   height: 50vh;
   width: 45vw;
 }
-main .top_main p {
+
+.question_set2 {
+  height: 100vh;
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./302298.jpg");
+  background-size: 100% 100vh;
+  position: relative;
+}
+
+.question_set2 .question_set2_cont{
+  height: 50vh;
+  width: 50%;
+  position: absolute;
+  left: 20vw;
+  top: 15vh;
+}
+
+.question_set2 .question_set2_cont h3 {
+  font-size: 2em;
+  margin: 20px 0 20px 0;
+  font-family: sans-serif;
+}
+
+.question_set2 .question_set2_cont h3:before {
+  content: "";
+  position: relative;
+  right: 10px;
+  width: 3px;
+  height: 40px;
+  border-left: 4px solid;
+}
+
+.question_set2 .question_set2_cont main .top_main p {
   font-size: 14px;
   font-family: "Arya", sans-serif;
   margin: 0 0 -10px 0;
