@@ -1,4 +1,28 @@
 @media (max-width: 1024px) {
+
+
+  main .cover {
+    height: 420vh;
+    width: 100%;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./ak1240.jfif");
+    filter: saturate(130%);
+    background-size: 100% 420vh;
+    /* border-radius: 20px; */
+  }
+
+  main .top_main {
+    justify-content: space-between;
+}
+
+  main .images .char img {
+    height: 75%;
+    width: 75%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+    filter: saturate(130%);
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
+  }
   .question_set1 .question_set1_top {
     height: 40vh;
   }
@@ -7,9 +31,8 @@
     height: 40vh;
   }
 
-  
   main .images {
-    height: 200vh;
+    height: 350vh;
     width: 100%;
     /* background-color: green; */
     display: grid;

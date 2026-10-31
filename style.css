@@ -24,7 +24,7 @@ nav {
   align-items: center;
   /* justify-content: center; */
   font-family: "Kameron", serif;
-  background-color: #0b0b0e;;
+  background-color: #0b0b0e;
   /* position: fixed; */
 }
 
@@ -46,14 +46,31 @@ main .top_main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
+}
+
+main .top_main .toptext {
+  font-family: serif;
+  text-align: center;
+}
+
+.top_main .toptext h3 {
+  font-size: 3rem;
+}
+
+.top_main .toptext p:nth-child(2){
+  font-size: 1.4rem;
+}
+.top_main .toptext p:nth-child(3){
+  font-size: 1.2rem;
 }
 
 main .cover {
   height: 100vh;
   width: 100%;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./cover.jfif");
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("./renamecov.jfif");
   filter: saturate(130%);
   background-size: 100% 100vh;
   /* border-radius: 20px; */
@@ -106,6 +123,12 @@ main .question_set1 {
   filter: saturate(130%);
   background-size: 45vw 100%;
   border-radius: 40px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 main .question_set1 .question_set1_bottom {
@@ -154,7 +177,7 @@ main .question_set1 .question_set1_bottom {
   position: relative;
 }
 
-.question_set2 .question_set2_cont{
+.question_set2 .question_set2_cont {
   height: 50vh;
   width: 50%;
   position: absolute;
