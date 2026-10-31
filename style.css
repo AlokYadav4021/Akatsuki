@@ -22,11 +22,43 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: space-between;
   font-family: "Kameron", serif;
   background-color: #0b0b0e;
   /* position: fixed; */
 }
+
+nav .left {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+nav .right {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .right #ual{
+  width: 70%;
+  visibility: hidden;
+}
+nav .right ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  cursor: pointer;
+}
+
+.right i:last-child {
+  position: relative;
+  right: 5vw;
+  visibility: hidden;
+  cursor: pointer;
+}
+
 
 nav img {
   height: 70px;
@@ -58,10 +90,10 @@ main .top_main .toptext {
   font-size: 3rem;
 }
 
-.top_main .toptext p:nth-child(2){
+.top_main .toptext p:nth-child(2) {
   font-size: 1.4rem;
 }
-.top_main .toptext p:nth-child(3){
+.top_main .toptext p:nth-child(3) {
   font-size: 1.2rem;
 }
 

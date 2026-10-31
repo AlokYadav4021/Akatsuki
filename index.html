@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="shortcut icon" href="./Akatsuki logo.png" type="image/x-icon" />
     <title>Akatsuki</title>
     <link rel="stylesheet" href="style.css" />
@@ -15,8 +21,32 @@
       <div class="cover">
         <div class="top_main">
           <nav>
+            <div class="left">
               <img src="./Akatsuki logo.png" alt="Akatsuki logo" />
               <h1>Akatsuki</h1>
+            </div>
+            <div class="right">
+              <div id="ual">
+                <ul>
+                  <li>Home</li>
+                  <li>History</li>
+                  <li>About</li>
+                  <li>contact</li>
+                </ul>
+              </div>
+              <i
+                onclick="show()"
+                id="show"
+                class="fa-solid fa-bars"
+                style="color: rgb(255, 255, 255)"
+              ></i>
+              <i
+                onclick="shed()"
+                id="hide"
+                class="fa-solid fa-x"
+                style="color: rgb(255, 255, 255)"
+              ></i>
+            </div>
           </nav>
           <div class="toptext">
             <h3>AKATSUKI ENCYCLOPEDIA</h3>
@@ -125,5 +155,7 @@
       </div>
       <div class="question_set_2"></div>
     </main>
+    <script type="module" src="./gsap.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
