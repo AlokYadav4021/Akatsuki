@@ -40,7 +40,7 @@ nav .right {
   justify-content: space-around;
 }
 
-nav .right #ual{
+nav .right #ual {
   width: 70%;
   visibility: hidden;
 }
@@ -52,13 +52,15 @@ nav .right ul {
   cursor: pointer;
 }
 
+.right i {
+  font-size: 24px;
+}
 .right i:last-child {
   position: relative;
   right: 5vw;
   visibility: hidden;
   cursor: pointer;
 }
-
 
 nav img {
   height: 70px;
@@ -78,7 +80,7 @@ main .top_main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 main .top_main .toptext {
@@ -277,4 +279,25 @@ main .images .char img {
 
 .images .char img:hover {
   transform: scale(1.1);
+}
+
+.question_set_2 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.slideImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none */
+}
+
+.slideImage img{
+    height: 100vh;
+    width: 100vw;
 }
