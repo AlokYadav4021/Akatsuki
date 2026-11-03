@@ -281,23 +281,27 @@ main .images .char img {
   transform: scale(1.1);
 }
 
-.question_set_2 {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+* {
+    box-sizing: border-box;
 }
 
-
-.slideImage{
+.question_set_2 {
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* display: none */
+    overflow: hidden;
 }
 
-.slideImage img{
-    height: 100vh;
-    width: 100vw;
+.slideImage {
+    width: 100%;
+    height: 80vh;
+    display: none;
+}
+
+.slideImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
