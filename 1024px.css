@@ -1,42 +1,168 @@
+
 @media (max-width: 1024px) {
+  /* ---------- NAV ---------- */
+  nav {
+    min-height: 64px;
+    padding: 0 16px;
+  }
 
+  nav .left {
+    width: 35%;
+  }
 
+  nav .left h1 {
+    font-size: 1.6rem;
+  }
+
+  nav img {
+    height: 56px;
+    width: 56px;
+  }
+
+  nav .right {
+    width: 50%;
+  }
+
+  nav .right #ual {
+    width: 80%;
+  }
+
+  /* ---------- COVER / CHARACTERS ---------- */
   main .cover {
-    height: 420vh;
-    width: 100%;
-    background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./ak1240.jfif");
-    filter: saturate(130%);
-    background-size: 100% 420vh;
-    /* border-radius: 20px; */
+    height: auto;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
   }
 
   main .top_main {
-    justify-content: space-between;
-}
-
-  main .images .char img {
-    height: 75%;
-    width: 75%;
-    object-fit: cover;
-    transition: all 0.2s linear;
-    filter: saturate(130%);
-    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
-  }
-  .question_set1 .question_set1_top {
-    height: 40vh;
+    height: auto;
+    padding: 40px 20px 20px;
   }
 
-  main .question_set1 .question_set1_bottom {
-    height: 40vh;
+  main .top_main .toptext h3 {
+    font-size: 2.2rem;
+  }
+
+  main .top_main .toptext p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  main .top_main .toptext p:nth-child(3) {
+    font-size: 1.05rem;
   }
 
   main .images {
-    height: 350vh;
+    height: auto;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px 8px;
+    padding: 10px 20px;
+    align-items: start;
+  }
+
+  main .images .char {
+    height: auto;
+  }
+
+  main .images .char p {
+    font-size: 16px;
+  }
+
+  main .images .char img {
+    height: auto;
     width: 100%;
-    /* background-color: green; */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: end;
+    object-fit: contain;
+  }
+
+  /* ---------- QUESTION SET 1 ---------- */
+  main .question_set1 {
+    height: auto;
+    justify-content: flex-start;
+    gap: 60px;
+    padding: 40px 30px;
+  }
+
+  main .question_set1 .question_set1_top {
+    height: auto;
+    gap: 30px;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  main .question_set1 .question_set1_top .left:first-child {
+    height: auto;
+    width: 50%;
+  }
+
+  main .question_set1 .question_set1_top .right:last-child {
+    height: auto;
+    min-height: 380px;
+    width: 45%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+  }
+
+  .question_set1 h3 {
+    font-size: 1.7em;
+  }
+
+  .question_set1 p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  main .question_set1 .question_set1_bottom {
+    height: auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  main .question_set1 .question_set1_bottom .left:first-child {
+    height: 240px;
+    width: 240px;
+    flex-shrink: 0;
+  }
+
+  main .question_set1 .question_set1_bottom .left:first-child img {
+    height: 234px;
+    width: 234px;
+  }
+
+  main .question_set1 .question_set1_bottom .left:first-child img:hover {
+    height: 240px;
+    width: 240px;
+  }
+
+  main .question_set1 .question_set1_bottom .right:last-child {
+    height: auto;
+    width: 60%;
+  }
+
+  /* ---------- QUESTION SET 2 (slider) ---------- */
+  .slideImage img {
+    object-fit: cover;
+  }
+
+  .question_set_2 .cont {
+    height: auto;
+  }
+
+  .question_set_2 .cont .text {
+    height: auto;
+    width: 80%;
+    padding: 24px;
+    gap: 14px;
+  }
+
+  .question_set_2 .cont h4:nth-child(2) {
+    font-size: 1.6rem;
+  }
+
+  .question_set_2 .cont p {
+    height: auto;
+    width: 90%;
   }
 }

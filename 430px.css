@@ -1,82 +1,205 @@
-@media (max-width: 450px) {
-  nav img {
-    height: 50px;
-    width: 50px;
+
+@media (max-width: 440px) {
+  /* ---------- NAV ---------- */
+  nav {
+    min-height: 60px;
+    padding: 0 16px;
   }
 
-  nav h1 {
+  nav .left {
+    width: 70%;
+  }
+
+  nav .left h1 {
+    font-size: 1.3rem;
+  }
+
+  nav img {
+    height: 46px;
+    width: 46px;
+  }
+
+  nav .right {
+    width: 30%;
+  }
+
+  /* Hamburger / close icons sit in the same spot; script toggles which shows */
+  nav .right #show,
+  nav .right #hide {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 22px;
   }
 
-  main .top_main h5 {
-    font-size: 11px;
+  /* Dropdown menu (visibility is toggled by your show()/shed() functions) */
+  nav .right #ual {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0b0b0e;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
   }
 
-  main {
-    height: 900vh;
+  nav .right ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    font-size: 1.1rem;
+  }
+
+  /* ---------- COVER / CHARACTERS ---------- */
+  main .cover {
+    height: auto;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 24px;
   }
 
   main .top_main {
-    justify-content: center;
-    height: 30vh;
-  }
-  main .top_main h3 {
-    font-size: 1.5em;
+    height: auto;
+    padding: 32px 16px 16px;
   }
 
-  main .top_main p {
+  main .top_main .toptext h3 {
+    font-size: 1.6rem;
+    margin-bottom: 14px;
+  }
+
+  main .top_main .toptext p:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  main .top_main .toptext p:nth-child(3) {
+    font-size: 0.9rem;
+  }
+
+  main .images {
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 8px;
+    padding: 10px 14px;
+    align-items: start;
+  }
+
+  main .images .char {
+    height: auto;
+  }
+
+  main .images .char p {
     font-size: 13px;
-    text-align: center;
-    width: 85%;
-    font-family: "Arya", sans-serif;
-    margin: 0 0 5px 0;
   }
 
-  main .question_set1 {
-    height: 140vh;
-  }
-
-  .question_set1 .question_set1_top {
-    height: 75vh;
+  main .images .char img {
+    height: auto;
     width: 100%;
+    object-fit: contain;
+  }
+
+  /* ---------- QUESTION SET 1 ---------- */
+  main .question_set1 {
+    height: auto;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 28px 16px;
+  }
+
+  main .question_set1 .question_set1_top {
+    height: auto;
     flex-direction: column;
-    align-items: center;
+    gap: 24px;
   }
 
-  .question_set1_top .left:first-child {
-    width: 90%;
-    height: 75vh;
+  main .question_set1 .question_set1_top .left:first-child {
+    height: auto;
+    width: 100%;
   }
 
-  .question_set1_top .right:last-child {
-    height: 50vh;
-    width: 90%;
-    background-size: 100% 50vh;
+  main .question_set1 .question_set1_top .right:last-child {
+    height: 260px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+  }
+
+  .question_set1 h3 {
+    font-size: 1.4em;
+    margin: 0 0 14px 0;
+    padding-left: 12px;
+  }
+
+  .question_set1 h3:before {
+    right: 0;
+    margin-right: 8px;
+    height: 28px;
+  }
+
+  .question_set1 p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 
   main .question_set1 .question_set1_bottom {
-    height: 50vh;
+    height: auto;
     flex-direction: column;
     align-items: center;
+    gap: 24px;
   }
 
-  .question_set1_bottom .left:first-child {
-    height: 50vh;
-    width: 90%;
-    background-size: 100% 100%;
-    order: 2;
+  main .question_set1 .question_set1_bottom .left:first-child {
+    height: 220px;
+    width: 220px;
   }
 
-  .question_set1_bottom .right:last-child {
-    height: 50vh;
-    width: 90%;
+  main .question_set1 .question_set1_bottom .left:first-child img {
+    height: 214px;
+    width: 214px;
   }
-  main .images {
-    height: 300vh;
+
+  main .question_set1 .question_set1_bottom .left:first-child img:hover {
+    height: 220px;
+    width: 220px;
+  }
+
+  main .question_set1 .question_set1_bottom .right:last-child {
+    height: auto;
     width: 100%;
-    /* background-color: green; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: end;
+  }
+
+  /* ---------- QUESTION SET 2 (slider) ---------- */
+  .slideImage img {
+    object-fit: cover;
+  }
+
+  .question_set_2 .cont {
+    height: auto;
+  }
+
+  .question_set_2 .cont .text {
+    height: auto;
+    width: 90%;
+    padding: 20px 14px;
+    gap: 10px;
+  }
+
+  .question_set_2 .cont h4 {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .question_set_2 .cont h4:nth-child(2) {
+    font-size: 1.25rem;
+  }
+
+  .question_set_2 .cont p {
+    height: auto;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.5;
   }
 }
