@@ -25,7 +25,9 @@ nav {
   justify-content: space-between;
   font-family: "Kameron", serif;
   background-color: #0b0b0e;
-  /* position: fixed; */
+  position: fixed;
+  top: 0px;
+  z-index: 1;
 }
 
 nav .left {
@@ -193,7 +195,7 @@ main .question_set1 .question_set1_bottom {
   transition: all 0.1s linear;
 }
 
-.left:first-child img:hover {
+.question_set1_bottom .left:first-child img:hover {
   height: 275px;
   width: 275px;
 }
@@ -301,4 +303,35 @@ main .images .char img {
 .slideImage img {
   height: 95vh;
   width: 100vw;
+}
+
+.question_set_2 .cont {
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.question_set_2 .cont .text{
+  height: 85%;
+  width: 65%;
+   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.288);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.question_set_2 .cont h4:nth-child(2){
+  font-size: 2rem;
+}
+
+.question_set_2 .cont p{
+  height: 35%;
+  width: 80%;
+  text-align: center;
 }
