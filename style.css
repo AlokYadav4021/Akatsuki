@@ -459,3 +459,54 @@ main .images .char img {
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 20px;
 }
+
+
+/* ---------- Question Set 5 ---------- */
+
+
+.question_set_5{
+  height: 150vh;
+  width: 100%;
+  background-color: olive;
+  position: relative;
+  z-index: -2;
+}
+
+.question_set_5 .back{
+  height:50vh;
+  width: 50%;
+  background-color: pink;
+  position: absolute;
+  bottom: 10vh;
+  left: 7%;
+  z-index: -1;
+}
+
+.question_set_5 .cont{
+  height: 95vh;
+  width: 40%;
+  background-color: red;
+  position: absolute;
+  top: 27vh;
+  left: 15%;
+  z-index: 1;
+}
+
+.question_set_5 img{
+  height: 110vh;
+  width: 45%;
+  position: absolute;
+  top: 20vh;
+  right: 10%;
+  z-index: -1;
+}
+
+.question_set_5 .circ{
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 1vh;
+  right: 5%;
+}
