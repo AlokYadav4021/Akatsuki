@@ -1,0 +1,19 @@
+.card{
+    /* background-image: url('./sgn.jfif');  */
+    object-fit: cover;
+    background-size: 100% 100%;
+    /* filter: opacity(0.6); */
+    /* color: white; */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+form{
+    filter: opacity(2.0);
+}
+
+.container{
+    /* background-color: red; */
+    background-image: url('./bac.png');
+    background-size: 100% 100%;
+
+}g
