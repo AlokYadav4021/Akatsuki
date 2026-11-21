@@ -18,27 +18,28 @@
 
             <h2 class="text-center mb-4">Create Account</h2>
 
-            <form>
+            <form action="homepage.html" onsubmit="return uname();">
 
                 <!-- Full Name -->
                 <div class="mb-3">
                     <label for="fullname" class="form-label">Full Name</label>
+                    <span id="nerror" class="mx-3 text-danger  fw-semibold d-inline-block"></span>
                     <input type="text" class="form-control" id="fullname"
-                        placeholder="Enter your full name" required>
+                        placeholder="Enter your full name">
                 </div>
 
                 <!-- Email -->
                 <div class="mb-3">
                     <label for="email" class="form-label">Email Address</label>
                     <input type="email" class="form-control" id="email"
-                        placeholder="Enter your email" required>
+                        placeholder="Enter your email" >
                 </div>
 
                 <!-- Password -->
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password"
-                        placeholder="Create a password" required>
+                        placeholder="Create a password">
                 </div>
 
                 <!-- Confirm Password -->
@@ -48,13 +49,13 @@
                     </label>
                     <input type="password" class="form-control"
                         id="confirmPassword"
-                        placeholder="Confirm your password" required>
+                        placeholder="Confirm your password" >
                 </div>
 
                 <!-- Terms and Conditions -->
                 <div class="form-check mb-3">
                     <input class="form-check-input" type="checkbox"
-                        id="terms" required>
+                        id="terms">
 
                     <label class="form-check-label" for="terms">
                         I agree to the Terms & Conditions
@@ -76,6 +77,6 @@
         </div>
 
     </div>
-
+<script src="./register.js"></script>
 </body>
 </html>

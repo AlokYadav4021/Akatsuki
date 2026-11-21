@@ -16,3 +16,8 @@ form{
     background-image: url('./bac.png');
     background-size: 100% 100%;
 }
+
+#nerror{
+    width: 275px;
+    font-size: 12px;
+}
