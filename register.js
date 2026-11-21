@@ -5,6 +5,11 @@ let confpassword = document.getElementById("confirmPassword");
  let uuname = /^[a-zA-Z]+$/;
 
  function uname() {
+
+
+    // username validation
+
+
  if (username.value == "") {
    document.getElementById("nerror").innerHTML = "*enter the user name";
    return false;
@@ -21,4 +26,14 @@ let confpassword = document.getElementById("confirmPassword");
     document.getElementById("nerror").innerHTML = "* git Username should not contain any number"
     return false
  }
+
+
+//  Email Validation
+
+
+if(mail.value == ""){
+    document.getElementById("emailerr").innerHTML = "Write your Email id"
+    return false
+}
+
 }
