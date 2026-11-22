@@ -82,4 +82,37 @@ let termss = document.getElementById("terms");
    }else{
     document.getElementById("Terms").innerHTML = "";
    }
+
+
+
+   
+ let fname = username.value;
+ let email = mail.value;
+ let passw = password.value;
+
+ localStorage.setItem("User_name", fname);
+ localStorage.setItem("mail_id", email);
+ localStorage.setItem("password", passw);
+
+ let record = new Array();
+
+ record = JSON.parse(localStorage.getItem("user")) || [];
+
+ if (record.some((val) => val.mail_id === email)) {
+   alert("Duplicate data Email alreay regestered");
+ } else {
+   record.push({
+     user_name: fname,
+     mail_id: email,
+     password: passw,
+   });
+
+   localStorage.setItem("user", JSON.stringify(record));
+   alert("User Registered");
  }
+ }
+
+
+
+
+
