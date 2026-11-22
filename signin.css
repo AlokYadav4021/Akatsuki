@@ -17,7 +17,7 @@ form{
     background-size: 100% 100%;
 }
 
-#nerror, #emailerr{
-    width: 275px;
+#nerror, #emailerr,#passerr,#conpasserr{
+    width: 268px;
     font-size: 10px;
 }

@@ -52,9 +52,13 @@
 
           <!-- Password -->
           <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
+            <label for="text" class="form-label">Password</label>
+            <span
+              id="passerr"
+              class="mx-1 text-danger fw-semibold d-inline-block"
+            ></span>
             <input
-              type="password"
+              type="text"
               class="form-control"
               id="password"
               placeholder="Create a password"
@@ -66,8 +70,12 @@
             <label for="confirmPassword" class="form-label">
               Confirm Password
             </label>
+            <span
+              id="conpasserr"
+              class=" text-danger fw-semibold d-inline-block"
+            ></span>
             <input
-              type="password"
+              type="text"
               class="form-control"
               id="confirmPassword"
               placeholder="Confirm your password"
